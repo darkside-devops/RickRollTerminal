@@ -20,19 +20,20 @@ echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿�
 echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠉⠉⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧"
 echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇"
 echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⠿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣿⣿⠏"
+echo " "
+echo " "
 
 read -p "Would you like to continue with the installation? (y/n) " answer
 
 if [ "$answer" = "y" ]; then
 
-  echo "Installing Dependancies"
+  echo "Installing Dependancies.."
   sudo apt install ffmpeg
   pip install moviepy
-  echo "Installing the Rickroll"
+  echo "Installing the Rickroll.."
   wget "https://cdn-138.anonfiles.com/l618ydVeyb/3e50a719-1675284531/video.mp4"
   echo "Installation Complete!"
-  echo "Starting Rick Roll"
-  python3 roll.py
+  echo "To run type in 'python3 rickroll.py'"
 else
   echo "Exiting.."
   exit 1
